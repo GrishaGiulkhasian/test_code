@@ -298,8 +298,8 @@ body {
 
 .foto_forma2 {
     position: absolute;
-    top: 180%; /* Отступ сверху (можно настроить) */
-    left: 50%; /* Отступ слева (можно настроить) */
+    top: 265%; /* Отступ сверху (можно настроить) */
+    left: 52%; /* Отступ слева (можно настроить) */
     height: auto; 
 }
 
@@ -484,3 +484,54 @@ body {
         margin-top: 20px;
     }
 }
+
+#carousel {
+    position: relative;
+    height: 600px;
+    width: 1100px;
+    overflow: hidden;
+  }
+  #carousel *{
+    box-sizing: border-box ;
+    margin: 0;
+    padding: 0;
+  }
+  #carousel li {
+    position: absolute;
+    left: 0;
+    list-style-type: none;
+  }
+  #carousel .next,
+  #carousel .previous{
+    display: block;
+    position: absolute;
+    top: 0;
+    color: transparent;
+    /* border: 1px solid #fff; */
+    width: 100px;
+    height: 100%;
+    line-height: 326px;
+    text-align: center;
+  }
+  #carousel .next{
+    right: 0
+  }
+  #carousel .next span,
+  #carousel .previous span{
+    border-top: 5px solid #fff;
+    border-left: 5px solid #fff;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 40%;
+    transform: rotate(-45deg)
+  }
+  #carousel .next span{
+    transform: rotate(135deg);
+    left: 20px
+  }
+  #carousel .next:hover,
+  #carousel .previous:hover{
+    background: rgba(0,0,0,.2);
+  }
